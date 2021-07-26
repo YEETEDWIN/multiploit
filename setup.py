@@ -30,7 +30,7 @@ setup(  # Finally, pass this all along to distutils to do the heavy lifting.
         'Topic :: Education :: Testing',
     ],
 
-    packages=['lib'],
+    packages=['multiploit'],
     setup_requires=[
         "",
     ],
