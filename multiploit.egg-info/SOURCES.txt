@@ -1,9 +1,0 @@
-README.rst
-setup.cfg
-setup.py
-lib/__init__.py
-lib/info.py
-multiploit.egg-info/PKG-INFO
-multiploit.egg-info/SOURCES.txt
-multiploit.egg-info/dependency_links.txt
-multiploit.egg-info/top_level.txt

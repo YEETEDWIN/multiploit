@@ -1,4 +1,12 @@
+from codecs     import open
+from inspect    import getsource
+from os.path    import abspath, dirname, join
 from setuptools import setup
+
+here = abspath(dirname(getsource(lambda:0)))
+
+with open(join(here, 'README.rst'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(  # Finally, pass this all along to distutils to do the heavy lifting.
     name="multiploit",
@@ -13,7 +21,8 @@ setup(  # Finally, pass this all along to distutils to do the heavy lifting.
         'Source Code': 'https://github.com/YEETEDWIN/multiploit',
         'Bug Tracker': 'https://github.com/YEETEDWIN/multiploit/issues'
     },
-    long_description="README.rst",
+    description      = long_description.splitlines()[2][1:-1],
+    long_description = long_description,
     long_description_content_type="text/x-rst",
     license="MIT",
     platforms="any",
@@ -29,7 +38,7 @@ setup(  # Finally, pass this all along to distutils to do the heavy lifting.
         'Topic :: Software Development',
         'Topic :: Education :: Testing',
     ],
-
+    keywords='multi-purpose multi simple one easier multiploit',
     packages=['multiploit'],
     setup_requires=[
         "",
@@ -37,4 +46,5 @@ setup(  # Finally, pass this all along to distutils to do the heavy lifting.
     install_requires=[
         "",
     ],
-)
+    py_modules=['play']
+    )
