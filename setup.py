@@ -10,8 +10,8 @@ with open(join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(  # Finally, pass this all along to distutils to do the heavy lifting.
     name="multiploit",
-    description="Python multi-purpose package",
     author="YEETEDWIN",
+    version='1.1.0',
     author_email="yeetedwin@protonmail.com",
     url="https://yeetedwin.is-a.dev/multiploit",
     download_url="https://yeetedwin.is-a.dev/multiploit/installing.html",
@@ -21,7 +21,7 @@ setup(  # Finally, pass this all along to distutils to do the heavy lifting.
         'Source Code': 'https://github.com/YEETEDWIN/multiploit',
         'Bug Tracker': 'https://github.com/YEETEDWIN/multiploit/issues'
     },
-    description      = long_description.splitlines()[2][1:-1],
+    description      = "A python multi-purpose package",
     long_description = long_description,
     long_description_content_type="text/x-rst",
     license="MIT",
@@ -39,12 +39,8 @@ setup(  # Finally, pass this all along to distutils to do the heavy lifting.
         'Topic :: Education :: Testing',
     ],
     keywords='multi-purpose multi simple one easier multiploit',
-    packages=['multiploit'],
-    setup_requires=[
-        "",
-    ],
     install_requires=[
-        "",
+        "playsound>=1.3.0",
     ],
     py_modules=['play']
     )
