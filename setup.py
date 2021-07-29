@@ -1,7 +1,7 @@
 from codecs     import open
 from inspect    import getsource
 from os.path    import abspath, dirname, join
-from setuptools import setup
+from setuptools import (find_packages, setup)
 
 here = abspath(dirname(getsource(lambda:0)))
 
@@ -42,5 +42,5 @@ setup(  # Finally, pass this all along to distutils to do the heavy lifting.
     install_requires=[
         "playsound>=1.3.0",
     ],
-    py_modules=['info']
+      packages=find_packages(exclude=["test"]),
     )
