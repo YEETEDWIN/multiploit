@@ -11,7 +11,7 @@ with open(join(here, 'README.rst'), encoding='utf-8') as f:
 setup(  # Finally, pass this all along to distutils to do the heavy lifting.
     name="multiploit",
     author="YEETEDWIN",
-    version='1.1.2.1',
+    version='1.1.2.2',
     author_email="yeetedwin@protonmail.com",
     url="https://yeetedwin.is-a.dev/multiploit",
     download_url="https://yeetedwin.is-a.dev/multiploit/installing.html",

@@ -1,1 +1,1 @@
-from info import Info
+from .info import Info
