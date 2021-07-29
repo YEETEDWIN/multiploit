@@ -11,7 +11,7 @@ with open(join(here, 'README.rst'), encoding='utf-8') as f:
 setup(  # Finally, pass this all along to distutils to do the heavy lifting.
     name="multiploit",
     author="YEETEDWIN",
-    version='1.1.0',
+    version='1.1.1',
     author_email="yeetedwin@protonmail.com",
     url="https://yeetedwin.is-a.dev/multiploit",
     download_url="https://yeetedwin.is-a.dev/multiploit/installing.html",
@@ -42,5 +42,5 @@ setup(  # Finally, pass this all along to distutils to do the heavy lifting.
     install_requires=[
         "playsound>=1.3.0",
     ],
-    py_modules=['play']
+    py_modules=['info']
     )
