@@ -1,2 +1,2 @@
-from multiploit.info import version
-version()
+from multiploit.info import help
+help()
